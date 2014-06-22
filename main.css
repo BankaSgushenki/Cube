@@ -1,0 +1,107 @@
+body {
+	font-family: "Arial";
+	font-size: 4em;
+	color: #333;
+	background-color: #fff; 
+	background-image: 
+	linear-gradient(90deg, transparent 20px, #abced4 79px, #abced4 81px, transparent 81px),
+	linear-gradient(#eee .1em, transparent .1em);
+	background-size: 100% 1.2em;
+	padding-top: 300px;
+}
+
+.top, .down,.right, .left {
+	position: absolute;
+	margin: 10px;
+	width: 0;
+    height: 0;
+	background: transparent;
+	margin-left: 120px;
+}
+
+.top {
+	border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 60px solid #aaa;
+}
+
+.down {
+	border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 60px solid #aaa;
+    margin-top: 134px;
+}
+
+.right {
+	border-bottom: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-right: 60px solid #aaa;
+    margin-top: 72px;
+    margin-left: 58px;
+}
+
+.left {
+	border-bottom: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 60px solid #aaa;
+    margin-left: 182px;
+    margin-top: 72px;
+}
+
+.cube {
+	margin-left: 40%;
+	-webkit-transform: perspective(1000px);
+	-webkit-transform-style: preserve-3d; 
+	-webkit-transition: all 1s ease;
+}
+
+.cube div {
+	position: absolute;
+	text-align: center;
+	line-height: 3em;
+	height: 200px;
+	width: 200px;
+	border: 3px solid black;
+	border-radius: 5px;
+	-webkit-transform-style: preserve-3d; 
+}
+
+.cube :nth-child(1) {
+	-webkit-transform: rotateX(-90deg) translateZ(100px);
+	background: rgba(89,225,114, .2);
+}
+.cube :nth-child(2) {
+	-webkit-transform: rotateY(-90deg) translateZ(100px);
+	background: rgba(96,194,245, .2);
+}
+.cube :nth-child(3) {
+	-webkit-transform: rotateY(90deg) translateZ(100px);
+	background: rgba(85,28,245, .2);
+}
+.cube :nth-child(4) {
+	-webkit-transform: translateZ(100px);
+	background: rgba(255,255,0, .2);
+}
+.cube :nth-child(5) {
+	-webkit-transform: translateZ(-100px);
+	background: rgba(255,0,0, .2);
+}
+.cube :nth-child(6) {
+	-webkit-transform: rotateX(90deg) translateZ(100px);
+	background: rgba(89,225,114, .2);
+}
+.top:hover ~ .cube    {
+     -webkit-transform: perspective(900px) rotate3d(1,0,0, 90deg);           
+}    
+.down:hover ~ .cube    {
+     -webkit-transform: perspective(900px) rotate3d(1,0,0, -90deg);           
+}       
+.right:hover ~ .cube    {
+     -webkit-transform: perspective(900px) rotate3d(0,1,0, 90deg);           
+}   
+.left:hover ~ .cube    {
+     -webkit-transform: perspective(900px) rotate3d(0,1,0, -90deg);           
+}     
+    
+
+
