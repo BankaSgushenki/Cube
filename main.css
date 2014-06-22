@@ -92,16 +92,16 @@ body {
 	background: rgba(89,225,114, .2);
 }
 .top:hover ~ .cube    {
-     -webkit-transform:  rotate3d(1,0.125,0, 120deg);           
+     -webkit-transform:  rotate3d(1,-0.125,0, 120deg);           
 }    
 .down:hover ~ .cube    {
      -webkit-transform:  rotate3d(1,0.125,0, -120deg);           
 }       
 .right:hover ~ .cube    {
-     -webkit-transform:  rotate3d(-0.125,1.25,0, 120deg);           
+     -webkit-transform:  rotate3d(-0.125,1,0, 120deg);           
 }   
 .left:hover ~ .cube    {
-     -webkit-transform:  rotate3d(0.125,1.25,0, -120deg);           
+     -webkit-transform:  rotate3d(0.125,1,0, -120deg);           
 }     
     
 
