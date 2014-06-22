@@ -49,8 +49,9 @@ body {
 }
 
 .cube {
+	position: absolute;
 	margin-left: 40%;
-	-webkit-transform: perspective(1000px);
+	-webkit-transform: perspective(2000px) rotate3d(0.5,1,0, -30deg); 
 	-webkit-transform-style: preserve-3d; 
 	-webkit-transition: all 1s ease;
 }
@@ -91,16 +92,16 @@ body {
 	background: rgba(89,225,114, .2);
 }
 .top:hover ~ .cube    {
-     -webkit-transform: perspective(900px) rotate3d(1,0,0, 90deg);           
+     -webkit-transform:  rotate3d(1,-0.25,0, 120deg);           
 }    
 .down:hover ~ .cube    {
-     -webkit-transform: perspective(900px) rotate3d(1,0,0, -90deg);           
+     -webkit-transform:  rotate3d(1,0.25,0, -120deg);           
 }       
 .right:hover ~ .cube    {
-     -webkit-transform: perspective(900px) rotate3d(0,1,0, 90deg);           
+     -webkit-transform:  rotate3d(0.25,1.25,0, 120deg);           
 }   
 .left:hover ~ .cube    {
-     -webkit-transform: perspective(900px) rotate3d(0,1,0, -90deg);           
+     -webkit-transform:  rotate3d(0.25,1.25,0, -120deg);           
 }     
     
 
